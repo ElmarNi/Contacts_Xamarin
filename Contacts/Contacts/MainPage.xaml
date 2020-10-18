@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Contacts.MainPage">
+
+    <StackLayout BackgroundColor="#f8f8f8">
+        <Label Text="Hello. This page for adding new contact" FontSize="Body" HorizontalTextAlignment="Center"  TextColor="Black" Margin="20,0,0,0"/>
+        <StackLayout Margin="20, 10" VerticalOptions="CenterAndExpand" BackgroundColor="White" Padding="20, 10">
+            <Entry Placeholder="First name" FontSize="16" x:Name="firstname"/>
+            <Entry Placeholder="Last name" FontSize="16" x:Name="lastname"/>
+            <Entry Placeholder="Email" FontSize="16" x:Name="email"/>
+            <Entry Placeholder="Phone number" FontSize="16" x:Name="number"/>
+            <Entry Placeholder="Adress" FontSize="16" x:Name="adress"/>
+            <Button Text="Save" Padding="0,20" BackgroundColor="AliceBlue" 
+                    x:Name="Savebutton"
+                    Clicked="Savebutton_Clicked"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
